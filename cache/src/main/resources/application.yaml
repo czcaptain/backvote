@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    #配置JDBC Driver
+    driver-class-name: org.h2.Driver
+    #配置数据库用户名
+    username: sa
+    #配置数据库密码
+    password:
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    defer-datasource-initialization: true
