@@ -14,8 +14,6 @@ import org.slf4j.LoggerFactory;
 public class LogsAspect {
     private final static Logger log = LoggerFactory.getLogger(LogsAspect.class);
 
-
-
     /**
      * 可重复使用的切点表达式
      */
@@ -33,7 +31,7 @@ public class LogsAspect {
         long startTime = System.currentTimeMillis();
         Object returnValue = proceedingJoinPoint.proceed();
         long totalTime = System.currentTimeMillis() - startTime;
-        log.info("程序执行时间 === > {totalTime}",totalTime);
+        log.info("程序执行时间 === > {}",totalTime);
         return returnValue;
     }
 }

@@ -7,6 +7,7 @@
         <module>cache</module>
         <module>function</module>
 		<module>logstime</module>
+		<module>spring-MgDB</module>
 	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>

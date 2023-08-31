@@ -25,30 +25,10 @@ public class UserController {
         this.studentService = userService;
     }
 
-
-
-
-
     @GetMapping("/count")
     @CountTime
     public Integer getStudentCount() {
        return studentService.getAllStudent().size();
     }
-
-
-    @GetMapping("/products")
-    public List<Student> getAllStudent() {
-        return  studentService.getAllStudent();
-
-    }
-
-
-
-    @GetMapping("update/{id}")
-    public void deleteStudent(@PathVariable Integer id) {
-         studentService.updateStudentById(id);
-    }
-
-
 
 }
